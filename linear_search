@@ -1,0 +1,25 @@
+def linear_search(data,item):
+  for i in range(len(data)):
+    if data[i]==item:
+      return i
+  return -1
+
+data=[1,2,3,4,5,6,7,8,9,0]
+print("Elements in List", data)
+x=int(input("Enter searching element"))
+
+result = linear_search(data,x)
+if result ==-1:
+  print("Element",x,"not found in the list",data)
+else:
+  print("Element",x, "is found in the list at index",result,"in list",data)
+  
+  Outout
+  --------------
+  Elements in List [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+Enter searching element10
+Element 10 not found in the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+Elements in List [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+Enter searching element7
+Element 7 is found in the list at index 6 in list [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
